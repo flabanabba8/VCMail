@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(npm run preview)",
+      "Bash(npm run deploy-rules)",
+      "Bash(npm ls:*)",
+      "Bash(node:*)",
+      "Bash(npx vite:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(git fetch:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(rg:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)"
+    ],
+    "deny": [
+      "Bash(npx vcmail:*)",
+      "Bash(terraform apply:*)",
+      "Bash(terraform destroy:*)",
+      "Bash(npm link:*)",
+      "Read(./.env)",
+      "Read(./vcmail.config.json)",
+      "Read(**/firebase_service_account*)"
+    ]
+  }
+}
